@@ -3,9 +3,9 @@ import os
 os.environ['LC_ALL'] = 'C'
 import zipfile
 
-from kaggle_scripts.setup.constants import C_NAME
-from kaggle_scripts.setup.kaggle_api import KaggleApiBetter
-from kaggle_scripts.utils.path_utils import get_competition_data_path
+from kaggle_scripts.comp_config import C_NAME
+from setup.kaggle_api import KaggleApiBetter
+from kaggle_scripts.utils.paths import get_competition_data_path
 
 api = KaggleApiBetter()
 competition_data_path = get_competition_data_path()

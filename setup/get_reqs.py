@@ -5,8 +5,8 @@ import sys
 from pathlib import Path
 from stdlib_list import stdlib_list
 
-from kaggle_scripts.setup.constants import C_NAME
-from kaggle_scripts.setup.kaggle_api import KaggleApiBetter
+from kaggle_scripts.comp_config import C_NAME
+from setup.kaggle_api import KaggleApiBetter
 
 api = KaggleApiBetter()
 data_path = f'/data/input/{C_NAME}'

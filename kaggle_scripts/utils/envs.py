@@ -5,7 +5,6 @@ import warnings
 
 import numpy as np
 import torch
-# from autocorrect import Speller
 from datasets import disable_progress_bar
 from tqdm import tqdm
 
@@ -23,7 +22,8 @@ def seed_everything(seed: int):
 def init_env():
     warnings.simplefilter("ignore")
     logging.disable(logging.ERROR)
-    os.environ["TOKENIZERS_PARALLELISM"] = "false"
+    #os.environ["TOKENIZERS_PARALLELISM"] = "false"
+    os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
     disable_progress_bar()
     tqdm.pandas()

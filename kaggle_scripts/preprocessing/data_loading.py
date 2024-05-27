@@ -8,7 +8,7 @@ from pyarrow.parquet import ParquetFile
 from torch.utils.data import Dataset
 from tqdm import tqdm
 
-from kaggle_scripts.utils.path_utils import get_competition_data_path
+from kaggle_scripts.utils.paths import get_competition_data_path
 
 
 def simple_load_commonlit_all_data(rows=None):

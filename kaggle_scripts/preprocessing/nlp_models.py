@@ -8,7 +8,7 @@ from nltk.corpus import stopwords
 from spellchecker import SpellChecker
 from transformers import AutoTokenizer
 
-from kaggle_scripts.utils.path_utils import get_competition_data_path
+from kaggle_scripts.utils.paths import get_competition_data_path
 
 
 class DebertaPreprocessor:

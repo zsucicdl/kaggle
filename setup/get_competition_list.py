@@ -1,5 +1,5 @@
-from kaggle_scripts.setup.kaggle_api import KaggleApiBetter
-from kaggle_scripts.utils.path_utils import get_competition_data_path
+from setup.kaggle_api import KaggleApiBetter
+from kaggle_scripts.utils.paths import get_competition_data_path
 
 api = KaggleApiBetter()
 competition_data_path = get_competition_data_path()

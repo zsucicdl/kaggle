@@ -1,16 +1,16 @@
 import os
 
-from kaggle_scripts.setup.constants import C_NAME
-from kaggle_scripts.setup.kaggle_api import KaggleApiBetter
-from kaggle_scripts.utils.path_utils import get_competition_data_path
+from kaggle_scripts.comp_config import C_NAME
+from setup.kaggle_api import KaggleApiBetter
+from kaggle_scripts.utils.paths import get_competition_data_path
 
 api = KaggleApiBetter()
-competition_data_path = get_competition_data_path()
+competition_data_path = get_competition_data_path(C_NAME)
 
 os.makedirs(C_NAME, exist_ok=True)
 os.makedirs(os.path.join(C_NAME, "gold"), exist_ok=True)
 os.makedirs(os.path.join(C_NAME, "silver"), exist_ok=True)
-os.makedirs(os.path.join(C_NAME, "bronze"), exist_ok=True)
+#os.makedirs(os.path.join(C_NAME, "bronze"), exist_ok=True)
 
 #todu progressbar
 print(C_NAME)

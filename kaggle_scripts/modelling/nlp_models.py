@@ -6,8 +6,8 @@ from transformers import AutoTokenizer, AutoConfig, AutoModelForSequenceClassifi
     TrainingArguments, Trainer
 
 from kaggle_scripts.evaluation.metrics import compute_metrics
-from kaggle_scripts.utils.env_utils import seed_everything
-from kaggle_scripts.utils.path_utils import get_competition_data_path
+from kaggle_scripts.utils.envs import seed_everything
+from kaggle_scripts.utils.paths import get_competition_data_path
 from accelerate import Accelerator
 
 # from autocorrect import Speller

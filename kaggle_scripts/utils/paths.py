@@ -1,6 +1,5 @@
 from pathlib import Path
-
-from kaggle_scripts.setup.constants import C_NAME
+import os
 
 
 def get_current_working_dir():
@@ -35,7 +34,7 @@ def get_project_root():
     return get_data_directory_path().parent
 
 
-def get_competition_data_path():
+def get_competition_data_path(C_NAME):
     data_path = get_data_directory_path()
     return data_path / C_NAME
 
@@ -43,6 +42,28 @@ def get_data_path():
     data_path = get_data_directory_path()
     return data_path
 
-def get_competition_data_path_string():
-    data_path = get_data_directory_path()
-    return str(data_path / C_NAME)
+
+def is_kaggle():
+    """
+    Checks if the code is running in a Kaggle environment.
+
+    Returns:
+    - (bool): True if running in Kaggle, else False.
+    """
+    return os.path.exists('/kaggle')
+
+
+class KagglePaths:
+    def __init__(self, c_name):
+        if is_kaggle():
+            prefix = '/kaggle/input'
+        else:
+            prefix = str(get_data_directory_path())
+        self.dataset_data_path = os.path.join(prefix, "")
+        self.competition_data_path = os.path.join(prefix, c_name)
+
+    def get_dataset_data_path(self, dataset_name):
+        return os.path.join(self.dataset_data_path, dataset_name)
+
+    def get_competition_data_path(self, dataset_name):
+        return os.path.join(self.competition_data_path, dataset_name)

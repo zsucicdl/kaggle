@@ -5,8 +5,8 @@ from kaggle.api.kaggle_api_extended import KaggleApi
 import os
 import json
 
-from kaggle_scripts.setup.kaggle_api import KaggleApiBetter
-from kaggle_scripts.utils.path_utils import get_data_path
+from setup.kaggle_api import KaggleApiBetter
+from kaggle_scripts.utils.paths import get_data_path
 
 api = KaggleApiBetter()
 data_path = get_data_path()
