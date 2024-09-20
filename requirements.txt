@@ -75,3 +75,19 @@ timm
 
 jupyterlab
 #
+
+
+
+notebook
+ipykernel
+scikit-learn
+pandas
+tqdm
+transformers
+bitsandbytes
+pytorch-lightning
+sentencepiece
+iterative-stratification
+#text_unidecode
+ipywidgets
+#protobuf==3.20.1

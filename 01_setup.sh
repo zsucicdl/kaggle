@@ -24,7 +24,7 @@ githubuser="zsucicdl"
 echo "Using username $githubuser"
 
 # Prompt only for the personal access token
-read -s -p "Enter GitHub Personal Access Token for user $githubuser: " githubtoken
+read -p "Enter GitHub Personal Access Token for user $githubuser: " githubtoken
 echo  # Add a newline for cleaner output after the silent read command
 
 # Use the curl command to send a POST request to the GitHub API to add the SSH key to the user's GitHub account
@@ -39,7 +39,7 @@ if [[ $response == *"key"* ]]; then
   sleep 30
 
   # Perform the git clone operation
-  git clone git@github.com:zsucicdl/kaggle.git
+  git clone git@github.com:zsucicdl/llm.git
 else
   echo "Failed to add SSH key. Please check your GitHub credentials and try again."
 fi
