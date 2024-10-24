@@ -1,7 +1,7 @@
 import os
 
 from kaggle_api import KaggleApiBetter
-from kaggle_scripts.comp_config import C_NAME
+C_NAME = 'um-game-playing-strength-of-mcts-variants'
 from kaggle_scripts.utils.paths import get_competition_data_path
 
 api = KaggleApiBetter()
