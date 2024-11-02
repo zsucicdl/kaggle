@@ -91,3 +91,16 @@ iterative-stratification
 #text_unidecode
 ipywidgets
 #protobuf==3.20.1
+
+
+
+torch
+#==<desired_version>  # replace <desired_version> with your torch version, or leave out the version if specific versioning isn't required
+vllm
+#@ file:///kaggle/input/making-wheels-of-necessary-packages-for-vllm
+grpcio
+#@ file:///kaggle/input/vllm-t4-fix/grpcio-1.62.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+ray
+#@ file:///kaggle/input/vllm-t4-fix/ray-2.11.0-cp310-cp310-manylinux2014_x86_64.whl
+sentence-transformers
+#@ file:///kaggle/input/hf-libraries/sentence-transformers/sentence_transformers-3.1.0-py3-none-any.whl

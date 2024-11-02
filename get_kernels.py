@@ -1,7 +1,7 @@
 import os
 
 from kaggle_api import KaggleApiBetter
-C_NAME = 'um-game-playing-strength-of-mcts-variants'
+C_NAME = 'eedi-mining-misconceptions-in-mathematics'
 from kaggle_scripts.utils.paths import get_competition_data_path
 
 api = KaggleApiBetter()

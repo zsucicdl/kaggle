@@ -12,8 +12,7 @@ api = KaggleApiBetter()
 data_path = get_data_path()
 
 datasets = [
-    "https://www.kaggle.com/datasets/verracodeguacas/huggingfacedebertav3variants",
-    "https://www.kaggle.com/datasets/cdeotte/deberta-v3-small-finetuned-v1"
+    "https://www.kaggle.com/datasets/takanashihumbert/eedi-finetuned-bge-public"
 ]
 #"https://www.kaggle.com/datasets/cdeotte/tf-efficientnet-whl-files",
 

@@ -7,7 +7,7 @@ import os
 
 from kaggle_api import KaggleApiBetter
 from kaggle_scripts.utils.paths import get_competition_data_path
-C_NAME = 'um-game-playing-strength-of-mcts-variants'
+C_NAME = 'eedi-mining-misconceptions-in-mathematics'
 api = KaggleApiBetter()
 competition_data_path = get_competition_data_path(C_NAME)
 os.makedirs(competition_data_path, exist_ok=True)
