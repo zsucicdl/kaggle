@@ -1,0 +1,91 @@
+FINAL
+by sunday 2am
+use submissions
+good cv method
+ensemble
+pooling grid
+deberta smalls
+gbdt koji?
+640 inference
+uzmi najbolju epohu
+gradient checkpointing
+feedback features
+prompt name?
+save oof models
+not seed?
+824 featuri
+jesu li featurei za debertu
+
+
+1. smallovi najbolji-koliko?, za nekoga 640
+2. largeovi trenirat prema smallovima
+3. 824+ jedan od
+
+
+
+FINISH DAY 1
+naive hill climbing - 4 epochs, only train, different pooling methods, d
+different pretraining, different learning schedules,
+
+
+1405
++start2 run
+
+1905
+basic pipeline
+pycharm pro
+avx512
+
+1. reusable
+2. easy to submit
+3. fast local cv
+4. documented?
+
+#0.7504279894103216
+#0.8076795791531115
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+
+
+
+
+
+tfidf-lgbm-baseline-cv-0-799-lb-0-799 0.789035
+deberta-v3-small-starter-cv-0-820-lb-0-800 0.8222424826800401
+
+
+
+
+
+
+
+git clone https://github.com/Ynakatsuka/kaggle_scripts
+cd kaggle_scripts
+pip install .
+
+
+actually read the code notes
+
+insight based files: feature groups, models
+optimize on those files for hyperparameters
+save best model configs
+final train those models
+ensemble those models in another notebook, or on kaggle?
+publish models on kaggle
+publish single (with some parameters) or ensembled kernels of those models
+
+
+fine tuned tokenizer
+
+group cfg
+
+tokenized_valid.features etc
+
+more detailed refactoring
+
+concept of copying on selection?
+
+typing
+
+ryzen 512 anx etc
+
+ehy is cdeotte averaging predictions
