@@ -10,6 +10,9 @@
 wheel
 black
 
+kaggle
+python-dotenv
+
 json2html
 jupyter
 kaggle

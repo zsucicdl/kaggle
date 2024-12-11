@@ -1,7 +1,7 @@
 import os
 
 from kaggle_api import KaggleApiBetter
-C_NAME = 'eedi-mining-misconceptions-in-mathematics'
+C_NAME = 'llms-you-cant-please-them-all'
 from kaggle_scripts.utils.paths import get_competition_data_path
 
 api = KaggleApiBetter()
@@ -31,8 +31,8 @@ for notebook in kernels:
         gold_notebooks.append(notebook)
     elif notebook.totalVotes >= 10:
         silver_notebooks.append(notebook)
-    # elif notebook.totalVotes >= 5:
-    #     bronze_notebooks.append(notebook)
+    elif notebook.totalVotes >= 5:
+        bronze_notebooks.append(notebook)
 
 # doing, done, check exists
 # for notebook in gold_notebooks:
@@ -63,12 +63,12 @@ for notebook in silver_notebooks:
         pass
 print(f"Silver notebooks pulled: {silver_count}")
 
-# bronze_count = 0
-# for notebook in bronze_notebooks:
-#     try:
-#         api.kernels_pull(kernel=notebook.ref, path=f'./{C_NAME}/bronze')
-#         bronze_count += 1
-#     except:
-#         pass
-# print(f"Bronze notebooks pulled: {bronze_count}")
-#
+bronze_count = 0
+for notebook in bronze_notebooks:
+    try:
+        api.kernels_pull(kernel=notebook.ref, path=f'./{C_NAME}/bronze')
+        bronze_count += 1
+    except:
+        pass
+print(f"Bronze notebooks pulled: {bronze_count}")
+
