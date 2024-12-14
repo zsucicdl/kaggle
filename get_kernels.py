@@ -41,7 +41,7 @@ for notebook in kernels:
 #     api.kernels_pull(kernel=notebook.ref, path=f'./{C_NAME}/silver')
 # for notebook in bronze_notebooks:
 #     api.kernels_pull(kernel=notebook.ref, path=f'./{C_NAME}/bronze')
-
+#
 # avoiding weird kaggle regex 500 error
 # pull with try blocks and counting
 gold_count = 0
