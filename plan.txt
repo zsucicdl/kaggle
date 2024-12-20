@@ -1,3 +1,16 @@
+install specific python version
+check python version
+vs code run python nicer
+vs code open double shift
+gitignore novi md
+remove suggestions vscode
+local cv
+local to kaggle
+automate model upload
+
+
+
+
 FINAL
 by sunday 2am
 use submissions

@@ -2,6 +2,7 @@ import os
 
 from kaggle_api import KaggleApiBetter
 C_NAME = 'llms-you-cant-please-them-all'
+C_NAME = 'wsdm-cup-multilingual-chatbot-arena'
 from kaggle_scripts.utils.paths import get_competition_data_path
 
 api = KaggleApiBetter()
@@ -10,7 +11,7 @@ competition_data_path = get_competition_data_path(C_NAME)
 os.makedirs(C_NAME, exist_ok=True)
 os.makedirs(os.path.join(C_NAME, "gold"), exist_ok=True)
 os.makedirs(os.path.join(C_NAME, "silver"), exist_ok=True)
-# os.makedirs(os.path.join(C_NAME, "bronze"), exist_ok=True)
+os.makedirs(os.path.join(C_NAME, "bronze"), exist_ok=True)
 
 # todu progressbar
 print(C_NAME)
